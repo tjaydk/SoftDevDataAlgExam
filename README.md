@@ -4,7 +4,7 @@
 Links to code examples:
 
 1. [Recursion and binary search](https://github.com/tjaydk/SoftDevDataAlgExam/tree/master/Examples/BinarySearchAndRecursion)
-2. [Bags, queues and stacks]()
+2. [Bags, queues and stacks](https://github.com/tjaydk/SoftDevDataAlgExam/tree/master/Examples/BagsQueuesStacks)
 3. [Union find case](https://github.com/tjaydk/SoftDevDataAlgExam/tree/master/Examples/UnionFind)
 4. [Merge sort]()
 5. [Quick sort]()
