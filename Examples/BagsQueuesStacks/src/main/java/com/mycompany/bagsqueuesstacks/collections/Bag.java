@@ -40,43 +40,26 @@ public class Bag<T> implements Iterable<T> {
     public boolean isEmpty() {
         return size == 0;
     }
-    
-    public void printBag() {
-        Node<T> cur = first;
-        while(null != cur.next) {
-            System.out.println(cur.item);
-            cur = cur.next;
-        }
-        System.out.println(cur.item);
-    }
 
     @Override
     public Iterator<T> iterator() {
-        return new BagIterator(this.first);
+        return new BagIterator();
     }
 
-    private class BagIterator<T> implements Iterator {
+    private class BagIterator implements Iterator {
 
-        private Node<T> current;
-
-        public BagIterator(Node<T> start) {
-            this.current = start;
-        }
+        private Node<T> current = first;
 
         @Override
         public boolean hasNext() {
-            return null != current.next;
+            return null != current;
         }
 
         @Override
         public T next() {
-            if (!hasNext()) {
-                return current.item;
-            }
             T item = current.item;
             current = current.next;
             return item;
         }
-
     }
 }
